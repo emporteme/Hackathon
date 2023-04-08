@@ -25,7 +25,7 @@ export async function getServerSideProps() {
 export default function Shop({ shop }) {
     return (
         <MainLayout>
-            <SearchBar shops={shop}/>
+            <SearchBar shops={shop} />
         </MainLayout>
     )
 }
