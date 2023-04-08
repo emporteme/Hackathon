@@ -1,0 +1,133 @@
+.unik {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+
+    .search {
+        width: 50%;
+
+        input {
+            width: 100%;
+            border-radius: 0.5rem;
+            padding: 0.3rem 0.5rem;
+            border: solid #604A57;
+        }
+    }
+
+    .list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .best-sellers-item {
+            position: relative;
+            width: 14.5rem;
+            /* adjust this value based on the number of books you want to display */
+            height: 20rem;
+            border-radius: 1rem;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 1rem;
+            }
+
+            .best-sellers-item-details {
+                display: none;
+            }
+
+            &:hover {
+                cursor: pointer;
+
+                .best-sellers-item-details {
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    color: #fff;
+                    width: 100%;
+                    padding: 1rem;
+                    font-size: 1.2rem;
+                    border-radius: 1rem;
+
+                    h3 {
+                        margin: 0;
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .unik {
+        .search {
+            width: 80%
+        }
+
+        .list {
+            justify-content: center;
+            gap: 1rem;
+
+            .best-sellers-item {
+                position: relative;
+                width: 13rem;
+                /* adjust this value based on the number of books you want to display */
+                height: 19rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:786px) {
+    .unik {
+        .search {
+            width: 100%
+        }
+
+        .list {
+            justify-content: center;
+            gap: 1rem;
+
+            .best-sellers-item {
+                position: relative;
+                width: 12rem;
+                /* adjust this value based on the number of books you want to display */
+                height: 18rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .unik {
+        .search {
+            width: 100%
+        }
+
+        .list {
+            justify-content: center;
+            gap: 0.5rem;
+
+            .best-sellers-item {
+                position: relative;
+                width: 9rem;
+                /* adjust this value based on the number of books you want to display */
+                height: 14rem;
+            }
+        }
+    }
+}
