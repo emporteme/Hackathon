@@ -1,0 +1,29 @@
+.mapContainer {
+    height: 500px;
+}
+
+.leaflet-container {
+    height: 100%;
+}
+
+.circleText {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -50%;
+    transform: translateY(-50%);
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}

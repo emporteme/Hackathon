@@ -1,0 +1,74 @@
+{
+    "shops": [
+        {
+            "id": 1,
+            "name": "Shop 1",
+            "lat": 51.090194,
+            "lng": 71.933777,
+            "category": "Category A"
+        },
+        {
+            "id": 2,
+            "name": "Shop 2",
+            "lat": 51.090274,
+            "lng": 71.933729,
+            "category": "Category A"
+        },
+        {
+            "id": 3,
+            "name": "Shop 3",
+            "lat": 51.098064,
+            "lng": 71.931325,
+            "category": "Category B"
+        },
+        {
+            "id": 4,
+            "name": "Shop 4",
+            "lat": 51.092872,
+            "lng": 71.926003,
+            "category": "Category C"
+        },
+        {
+            "id": 5,
+            "name": "Shop 5",
+            "lat": 51.089920,
+            "lng": 71.415107,
+            "category": "Category A"
+        },
+        {
+            "id": 6,
+            "name": "Shop 6",
+            "lat": 51.092864,
+            "lng": 71.402697,
+            "category": "Category B"
+        },
+        {
+            "id": 7,
+            "name": "Shop 7",
+            "lat": 51.102434,
+            "lng": 71.412072,
+            "category": "Category C"
+        },
+        {
+            "id": 8,
+            "name": "Shop 8",
+            "lat": 51.103277,
+            "lng": 71.413038,
+            "category": "Category A"
+        },
+        {
+            "id": 9,
+            "name": "Shop 9",
+            "lat": 51.107918,
+            "lng": 71.416054,
+            "category": "Category B"
+        },
+        {
+            "id": 10,
+            "name": "Shop 10",
+            "lat": 51.105395,
+            "lng": 71.434470,
+            "category": "Category C"
+        }
+    ]
+}
