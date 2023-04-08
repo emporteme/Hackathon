@@ -3,15 +3,14 @@ import Link from "next/link";
 import { useState } from "react";
 import styles from "../styles/searchBar.module.scss";
 
-export default function SearchBar({ books }) {
+export default function SearchBar({ shops }) {
     const [search, setSearch] = useState("");
 
-    const filteredBooks = books.filter((book) => {
+    const filteredShops = shops.filter((shop) => {
         return (
-            book.title.toLowerCase().includes(search.toLowerCase()) ||
-            book.author.toLowerCase().includes(search.toLowerCase()) ||
-            book.description.toLowerCase().includes(search.toLowerCase()) ||
-            book.genre.toLowerCase().includes(search.toLowerCase())
+            shop.name.toLowerCase().includes(search.toLowerCase()) ||
+            shop.description.toLowerCase().includes(search.toLowerCase())
+            // Add any other search criteria if needed
         );
     });
 
@@ -26,14 +25,14 @@ export default function SearchBar({ books }) {
                     />
                 </div>
                 <div className={styles.list}>
-                    {filteredBooks.map((book) => {
+                    {filteredShops.map((shop) => {
                         return (
-                            <Link href={`/books/${book.id}`} key={book.id}>
+                            <Link href={`/shop/${shop.id}`} key={shop.id}>
                                 <div className={styles["best-sellers-item"]}>
-                                    <img src={book.image} alt={book.title} />
+                                    <img src='/team1.jpg' alt={shop.name} />
                                     <div className={styles["best-sellers-item-details"]}>
-                                        <h3>{book.title}</h3>
-                                        <p>by {book.author}</p>
+                                        <h3>{shop.name}</h3>
+                                        <p>{shop.description}</p>
                                     </div>
                                 </div>
                             </Link>

@@ -37,7 +37,6 @@ export default function Footer() {
                     <a href="mailto:magzhan_volk@outlook.com">magzhan_volk@outlook.com</a>
                     <a href="mailto:magzhan_volk@outlook.com">magzhan_volk@outlook.com</a>
                 </div>
-
             </div>
             <div className={styles.line} />
             <div className={styles.copyright}>
