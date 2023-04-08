@@ -4,7 +4,7 @@ export function Logo() {
     return (
         <>
             <Link href={'/'}>
-                <div className={styles.logo}>Library</div>
+                <div className={styles.logo}>ShopLocator</div>
             </Link>
         </>
     )

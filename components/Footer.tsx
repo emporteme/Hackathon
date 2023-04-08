@@ -15,14 +15,13 @@ export default function Footer() {
                 <div className={styles.logo}>
                     <Logo />
                     <div className={styles.slogan}>
-                        Access your favorite books anytime, anywhere with our online library app. Browse through a vast collection of titles and genres, and discover new books to add to your reading list. With easy-to-use features and convenient access, reading has never been more accessible. Join our community of book lovers today!
+                        ShopLocator is an innovative app designed during a hackathon event, with the primary goal of helping users find nearby shops and explore their offerings with ease. The app is specifically tailored for the KazAeroSpace community, but its capabilities can be extended to a wider audience.
                     </div>
                 </div>
                 <div className={styles.pageLinks}>
                     <Link href={'/'}>Home</Link>
-                    <Link href={'/books'}>Books</Link>
-                    <Link href={'/recomendations'}>Recomendations</Link>
-                    <Link href={'/reviews'}>Reviews</Link>
+                    <Link href={'/shop'}>Shop</Link>
+                    <Link href={'/map'}>Map</Link>
                     <Link href={'/aboutUs'}>About Us</Link>
                     <Link href={'/contacts'}>Contacts</Link>
                 </div>
@@ -46,7 +45,7 @@ export default function Footer() {
                     <AiOutlineCopyrightCircle />
                     <div className='mainText'>Copyright.</div>
                 </div>
-                <div>All rights reserved | 31.03.2023</div>
+                <div>All Hackathon rights reserved | 08.04.2023</div>
             </div>
         </div>
     )
