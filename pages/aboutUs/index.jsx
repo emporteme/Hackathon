@@ -4,96 +4,62 @@ import styles from "../../styles/aboutUs.module.scss";
 
 export default function AboutUs() {
     return (
-        <MainLayout title="About Us | Online Library">
+        <MainLayout title="About Us | Shop Finder">
             <div className={styles["about-us"]}>
-                <h1>About Us</h1>
+                <h1>About Our Team</h1>
                 <p>
-                    Welcome to Online Library, your one-stop platform for accessing a wide
-                    range of books in digital format. Our mission is to provide readers
-                    with an extensive collection of books spanning various genres,
-                    languages, and topics, ensuring that everyone can find something they
-                    love.
+                    We are a team of five dedicated professionals, each with their unique
+                    expertise and passion for creating an exceptional website for searching shops with
+                    and without a map. Our collaboration has resulted in a platform that caters to the
+                    needs of users looking to find the best shopping experiences in their area.
                 </p>
+
+                <h2>Our Team Members:</h2>
+                <ul>
+                    <li><strong>Magzhan</strong> - Team Leader, Frontend Developer (React and Next.js)</li>
+                    <li><strong>Abay</strong> - Backend Developer (FastAPI, MongoDB)</li>
+                    <li><strong>Ernar</strong> - Backend Developer (FastAPI, MongoDB)</li>
+                    <li><strong>Anya</strong> - DevOps Engineer (Docker)</li>
+                    <li><strong>Aruzhan</strong> - UX/UI Designer, Presentation Maker</li>
+                </ul>
+
+                <p>
+                    Each member of our team has a diverse set of skills that contribute to
+                    the success of our platform. We have collaborated to create a seamless user
+                    experience, from the frontend interface to the backend infrastructure.
+                </p>
+
                 <div className={styles.dots}>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
                 <div className={styles.image}>
-                    <img src="/aboutUs1.jpg" alt="aboutUs1" />
+                    <img src="/team1.jpg" alt="Team Photo 1" />
                 </div>
                 <div className={styles.dots}>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
+
                 <p>
-                    Online Library was founded by a group of passionate book enthusiasts
-                    who wanted to make reading more accessible and convenient. Our
-                    easy-to-use platform allows you to browse, search, and read books
-                    online or download them for offline reading. We strive to keep our
-                    library up-to-date with the latest releases and timeless classics, so
-                    you can always find something new and interesting to read.
+                    We are proud to have worked on this project for the KazAeroSpace Hackathon and believe that our efforts have resulted in a valuable solution for users to find and explore shops in their area.
                 </p>
+
                 <div className={styles.dots}>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
                 <div className={styles.image}>
-                    <img src="/aboutUs2.jpg" alt="aboutUs2" />
+                    <img src="/team2.jpg" alt="Team Photo 2" />
                 </div>
                 <div className={styles.dots}>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                <p>
-                    In addition to our vast collection of books, we also offer features
-                    that enhance your reading experience, such as customizable font sizes,
-                    styles, and background colors. We understand that everyone has
-                    different preferences when it comes to reading, and our goal is to
-                    create an environment that caters to those individual needs.
-                </p>
-                <div className={styles.dots}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div className={styles.image}>
-                    <img src="/aboutUs.gif" width="100%" height="100%"  alt="a gif" />
-                </div>
-                <div className={styles.dots}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <p>
-                    We also value community engagement and encourage our users to share
-                    their thoughts and recommendations with other readers. By fostering a
-                    sense of connection and collaboration, we hope to create a space where
-                    everyone can learn from each other and discover new books to enjoy.
-                </p>
-                <div className={styles.dots}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div className={styles.image}>
-                    <img src="/aboutUs4.jpg" alt="aboutUs4" />
-                </div>
-                <div className={styles.dots}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <p>
-                    We believe in the power of reading to inspire, educate, and transform
-                    lives. Our goal is to make literature more accessible to everyone,
-                    regardless of their background or location. Thank you for joining us
-                    on this journey, and we hope you enjoy your experience with Online
-                    Library.
-                </p>
             </div>
         </MainLayout>
     );
