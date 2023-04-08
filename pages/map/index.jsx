@@ -1,8 +1,8 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import MainLayout from "@/components/MainLayout";
-import ApiClient from "@/api/ApiClient"; // Import ApiClient
 import "leaflet/dist/leaflet.css";
+import ApiClient from "@/api/ApiClient"; // Import ApiClient
 
 const LeafletMap = dynamic(
     () => import("@/components/LeafletMap"),
