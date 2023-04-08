@@ -47,8 +47,6 @@ export default function Header() {
                         <li className={router.pathname === '/books' ? `${styles.activeHeader}` : ''}><Link href="/books">Books</Link></li>
                         <li className={router.pathname === '/shop' ? `${styles.activeHeader}` : ''}><Link href="/shop">Shop</Link></li>
                         <li className={router.pathname === '/map' ? `${styles.activeHeader}` : ''}><Link href="/map">Map</Link></li>
-                        <li className={router.pathname === '/recomendations' ? `${styles.activeHeader}` : ''}><Link href="/recomendations">Recomendations</Link></li>
-                        <li className={router.pathname === '/reviews' ? `${styles.activeHeader}` : ''}><Link href="/reviews">Reviews</Link></li>
                         <li className={router.pathname === '/aboutUs' ? `${styles.activeHeader}` : ''}><Link href="/aboutUs">About us</Link></li>
                         <li className={router.pathname === '/contacts' ? `${styles.activeHeader}` : ''}><Link href="/contacts">Contacts</Link></li>
                     </ul>

@@ -29,6 +29,16 @@ export default function AboutUs() {
                     experience, from the frontend interface to the backend infrastructure.
                 </p>
 
+                <h2>Our Mission</h2>
+                <p>
+                    Our mission is to make it easy for users to discover the best shopping experiences in their area by providing a reliable and user-friendly platform. We believe that by connecting people to local shops, we can help support local businesses and foster a sense of community.
+                </p>
+
+                <h2>Our Vision</h2>
+                <p>
+                    Our vision is to become the go-to platform for users seeking a comprehensive and up-to-date directory of shops in their area. We strive to continuously improve our platform, incorporating user feedback and the latest technology to create an even better experience for our users.
+                </p>
+
                 <div className={styles.dots}>
                     <div></div>
                     <div></div>
