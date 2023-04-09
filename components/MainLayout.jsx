@@ -8,7 +8,7 @@ import Greating from "./Geating";
 // import mockBooks from "@/data/books";
 
 
-export default function MainLayout({ children, spacing = "2vh 5vw", title = "Library | emporteme", bookTitle, extraSegments, skipLastSegment = false, }) {
+export default function MainLayout({ children, spacing = "2vh 5vw", title = "ShopLocator | Hackathon", bookTitle, extraSegments, skipLastSegment = false, }) {
     return (
         <div>
             <Head>

@@ -1,17 +1,31 @@
-// import Head from 'next/head'
-// import Image from 'next/image'
-// import { Montserrat } from 'next/font/google'
-// import style
-import styles from '@/styles/Home.module.scss'
-// import components
-import MainLayout from '../components/MainLayout'
-// import mock API
+import MainLayout from "@/components/MainLayout";
+import ApiClient from "@/api/ApiClient"; // Import ApiClient
+import SearchBar from "@/components/SearchBar";
 
-export default function Home() {
+// Fetch data from API using getServerSideProps
+export async function getServerSideProps() {
+	try {
+		const response = await ApiClient.get("/shop"); // Replace with your API endpoint
+		const shop = response.data;
+
+		return {
+			props: {
+				shop,
+			},
+		};
+	} catch (error) {
+		console.error("Error fetching shop data:", error);
+		return {
+			notFound: true,
+		};
+	}
+}
+
+
+export default function Shop({ shop }) {
 	return (
 		<MainLayout>
-			<div className={styles.home}>
-			</div>
+			<SearchBar shops={shop} />
 		</MainLayout>
 	)
 }
