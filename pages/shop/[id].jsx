@@ -1,6 +1,6 @@
 import MainLayout from "@/components/MainLayout";
 import { useRouter } from "next/router";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import ApiClient from "@/api/ApiClient";
 
 function ShopDetail() {
@@ -10,12 +10,21 @@ function ShopDetail() {
     const [shop, setShop] = useState(null);
 
     useEffect(() => {
-        // Make an API request to fetch the shop data using the ID from the URL
-        ApiClient.get(`/shop/${id}`).then((response) => {
-            setShop(response.data);
-        }).catch((error) => {
-            console.error(error);
-        });
+        if (!id) {
+            return;
+        }
+
+        const fetchShopData = async () => {
+            try {
+                const response = await ApiClient.get(`/shop/${id}`);
+                console.log('API response:', response);
+                setShop(response.data);
+            } catch (error) {
+                console.error(error);
+            }
+        };
+
+        fetchShopData();
     }, [id]);
 
     return (
