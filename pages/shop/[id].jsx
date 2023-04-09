@@ -1,17 +1,42 @@
-import { useRouter } from "next/router";
 import MainLayout from "@/components/MainLayout";
+import { useRouter } from "next/router";
+import { useState, useEffect } from 'react';
+import ApiClient from "@/api/ApiClient";
 
 function ShopDetail() {
     const router = useRouter();
     const { id } = router.query;
 
-    // Fetch shop details using the id from the API or JSON data
-    // Display the fetched shop details on this page
+    const [shop, setShop] = useState(null);
+
+    useEffect(() => {
+        // Make an API request to fetch the shop data using the ID from the URL
+        ApiClient.get(`/shop/${id}`).then((response) => {
+            setShop(response.data);
+        }).catch((error) => {
+            console.error(error);
+        });
+    }, [id]);
 
     return (
         <MainLayout>
-            <h1>Shop Detail Page for ID: {id}</h1>
-            {/* Render the shop details here */}
+            {shop ? (
+                <>
+                    <h1>{shop.name}</h1>
+                    <p>{shop.description}</p>
+                    <h2>Products:</h2>
+                    <ul>
+                        {shop.products.map((product) => (
+                            <li key={product.id}>
+                                <h3>{product.name}</h3>
+                                <p>{product.description}</p>
+                            </li>
+                        ))}
+                    </ul>
+                </>
+            ) : (
+                <p>Loading...</p>
+            )}
         </MainLayout>
     );
 }
